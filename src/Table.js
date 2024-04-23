@@ -266,27 +266,48 @@ console.log("columnVisibility",columnVisibility)
               </td>
                )}
                 {columnVisibility.dependency ==false&&(
-              <td className='input-no-border'contentEditable="true" style={{ color: 'white' }}>{item.dependency && <span style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>{item.dependency}</span>}</td>
+              <td className='input-no-border'contentEditable="true" style={{ color: 'white' }}>{ <span style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>{item.dependency}</span>}</td>
                 )}{columnVisibility.tags==false &&(
-                  <td contentEditable="true" style={{ color: 'white' }}>{item.tags && <span style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>
+                  // <td contentEditable="true" style={{ color: 'white' }}>{item.tags && <span style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>
+                  // <select
+                  //     value={item.tags}
+                  //     onChange={(e) => {
+                  //       const newStatus = e.target.value;
+                  //       const newData = data.map(row => {
+                  //         if (row.id === item.id) {
+                  //           return { ...row, tags: newStatus };
+                  //         }
+                  //         return row;
+                  //       });
+                  //       setData(newData);
+                  //     }}
+                  //     className="select-status select-no-border"
+                  //   >
+                  //      {data?.map((item) => (
+                  //         <option value={item?.tags} style={{ color: 'black' }}>{item?.tags}</option>
+                  //       ))}
+                  //   </select></span>}</td>
+                  <td style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>
                   <select
-                      value={item.tags}
-                      onChange={(e) => {
-                        const newStatus = e.target.value;
-                        const newData = data.map(row => {
-                          if (row.id === item.id) {
-                            return { ...row, tags: newStatus };
-                          }
-                          return row;
-                        });
-                        setData(newData);
-                      }}
-                      className="select-status select-no-border"
-                    >
-                       {data?.map((item) => (
-                          <option value={item?.tags} style={{ color: 'black' }}>{item?.tags}</option>
-                        ))}
-                    </select></span>}</td>
+
+                    value={item.tags}
+                    onChange={(e) => {
+                      const newStatus = e.target.value;
+                      const newData = data.map(row => {
+                        if (row.id === item.id) {
+                          return { ...row, tags: newStatus };
+                        }
+                        return row;
+                      });
+                      setData(newData);
+                    }}
+                    className="select-status  select-no-border"
+                  >
+                   {data?.map((item) => (
+                        <option value={item?.tags} style={{ color: 'black' }}>{item?.tags}</option>
+                      ))}
+                  </select>
+                </td>
                 )}
 
               </tr>
