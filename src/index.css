@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bordered-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bordered-table th,
+.bordered-table td {
+  border: 1px solid black;
+  padding: 8px; 
+}
+.nav-link {
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid blue; 
+}
+.ViewContainer {
+  margin-top: 15px; 
+}
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.select-no-border {
+  border: none;
+  outline: none;
+  background: none;
+}
+  .select-option {
+  color: black;
+}
+.active-link {
+  border-bottom: 2px solid blue;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+.select-container {
+  background-color: white;
+  color: black;
+}
+.nav-link.active-link {
+  text-decoration: underline;
+}
+.input-no-border {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.select-status {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px 5px 5px 10px;
+  border: none;
+  background: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+.sort-menu {
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.sort-menu h4 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.sort-menu-item {
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.sort-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.select-status option {
+  padding: 5px;
+}
+
+.select-name {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px 30px 5px 10px;
+  border: none;
+  background: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  cursor: pointer;
+  color: black;
+}
+.select-status option[value="Fundamental"] {
+  background-color: brown;
+  color: white;
+}
+
+.select-status option[value="In Progress"] {
+  background-color: orange;
+  color: white;
+}
+
+.select-status option[value="Stuck"] {
+  background-color: red;
+  color: white;
+}
+
+.select-status option[value="Yet to Begin"] {
+  background-color: black;
+  color: white;
+}
+
+.select-status option[value="Done"] {
+  background-color: green;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-top: 10px;
+
+}
+
+.table th,
+.table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
