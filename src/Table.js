@@ -287,7 +287,7 @@ console.log("columnVisibility",columnVisibility)
                   //         <option value={item?.tags} style={{ color: 'black' }}>{item?.tags}</option>
                   //       ))}
                   //   </select></span>}</td>
-                  <td style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block' }}>
+                  <td style={{ backgroundColor: '#add8e6', borderRadius: '10px', padding: '2px 10px', display: 'inline-block',alignItems: 'center', justifyContent: 'center',marginTop:'5px',marginLeft:'5px', }}>
                   <select
 
                     value={item.tags}
